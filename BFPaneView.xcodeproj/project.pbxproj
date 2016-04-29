@@ -16,6 +16,7 @@
 		2C7055BA1CD3CDC90017A1D0 /* BFPaneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFPaneView.h; sourceTree = "<group>"; };
 		2C7055BC1CD3CDC90017A1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7055C41CD3D2AA0017A1D0 /* BFPaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFPaneView.swift; sourceTree = "<group>"; };
+		2C7055C61CD3D3070017A1D0 /* BFPaneView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BFPaneView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 		2C7055AD1CD3CDC90017A1D0 = {
 			isa = PBXGroup;
 			children = (
+				2C7055C61CD3D3070017A1D0 /* BFPaneView.podspec */,
 				2C7055B91CD3CDC90017A1D0 /* BFPaneView */,
 				2C7055B81CD3CDC90017A1D0 /* Products */,
 			);
