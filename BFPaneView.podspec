@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/bradfol/BFPaneView"
   s.author       = "Brad Fol"
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/bradfol/BFPaneView.git", :tag => "0.0.1" }
-  s.source_files  = "BFPaneView/*.swift"
-  s.framework  = "UIKit"
+  s.source       = { :git => "https://github.com/bradfol/BFPaneView.git", :tag => s.version }
+  s.source_files = "BFPaneView/*.swift"
+  s.framework    = "UIKit"
 end
