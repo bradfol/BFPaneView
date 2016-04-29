@@ -71,7 +71,7 @@ public class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDel
     }
     
     // Expose panGesture's enabled property
-    var panGestureEnabled: Bool {
+    public var panGestureEnabled: Bool {
         get { return panGesture.enabled }
         set(newValue) { panGesture.enabled = newValue }
     }
