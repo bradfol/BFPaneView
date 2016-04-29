@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2C7055BB1CD3CDC90017A1D0 /* BFPaneView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7055BA1CD3CDC90017A1D0 /* BFPaneView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C7055C51CD3D2AA0017A1D0 /* BFPaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7055C41CD3D2AA0017A1D0 /* BFPaneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C7055B71CD3CDC90017A1D0 /* BFPaneView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BFPaneView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7055BA1CD3CDC90017A1D0 /* BFPaneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFPaneView.h; sourceTree = "<group>"; };
 		2C7055BC1CD3CDC90017A1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7055C41CD3D2AA0017A1D0 /* BFPaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFPaneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7055BA1CD3CDC90017A1D0 /* BFPaneView.h */,
+				2C7055C41CD3D2AA0017A1D0 /* BFPaneView.swift */,
 				2C7055BC1CD3CDC90017A1D0 /* Info.plist */,
 			);
 			path = BFPaneView;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7055C51CD3D2AA0017A1D0 /* BFPaneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		2C7055C01CD3CDC90017A1D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradfol.BFPaneView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2C7055C11CD3CDC90017A1D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -278,6 +285,7 @@
 				2C7055C11CD3CDC90017A1D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
