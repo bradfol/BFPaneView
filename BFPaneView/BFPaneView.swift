@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDelegate {
+public class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDelegate {
     private var panGesture: UIPanGestureRecognizer!
     private var animator: UIDynamicAnimator!
     private var paneBehavior: PaneBehavior!
@@ -15,7 +15,7 @@ class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDelegate {
     
     weak var delegate: PaneViewDelegate?
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction))
@@ -59,12 +59,12 @@ class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDelegate {
         }
     }
     
-    func dynamicAnimatorDidPause(animator: UIDynamicAnimator) {
+    public func dynamicAnimatorDidPause(animator: UIDynamicAnimator) {
         let success = paneBehavior.targetPoint.x < 0
         delegate?.paneViewAnimationEnded(self, success: success)
     }
     
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+    public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
         // Exclude all control subviews from receiving pan gesture
         if touch.view != self { return false }
         else { return true }
