@@ -13,7 +13,7 @@ public class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDel
     private var paneBehavior: PaneBehavior!
     private var initialCenter: CGPoint!
     
-    weak var delegate: PaneViewDelegate?
+    public weak var delegate: PaneViewDelegate?
     
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -77,7 +77,7 @@ public class PaneView: UIView, UIDynamicAnimatorDelegate, UIGestureRecognizerDel
     }
 }
 
-@objc protocol PaneViewDelegate: class {
+@objc public protocol PaneViewDelegate: class {
     func paneViewPanEnded(paneView: PaneView, success: Bool)
     func paneViewAnimationEnded(paneView: PaneView, success: Bool)
     optional func paneViewPanBegan(paneView: PaneView)
